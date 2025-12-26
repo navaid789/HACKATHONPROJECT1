@@ -1,13 +1,13 @@
 # Physical AI & Humanoid Robotics Textbook
 
-This is a comprehensive textbook project covering Physical AI and Humanoid Robotics, implemented as an interactive learning platform with Docusaurus frontend and FastAPI backend.
+This is a comprehensive textbook project covering Physical AI and Humanoid Robotics, implemented as an interactive learning platform with Docusaurus frontend.
 
 ## Project Structure
 
-- `frontend/` - Docusaurus-based textbook interface
-- `backend/` - FastAPI backend with RAG capabilities
-- `specs/` - Specification-driven development artifacts
-- `.specify/` - SDD framework files
+- `docs/` - Docusaurus content directory with textbook chapters
+- `src/` - Custom Docusaurus components and styling
+- `static/` - Static assets (images, videos, etc.)
+- `.github/workflows/` - GitHub Actions for deployment
 
 ## Features
 
@@ -18,8 +18,9 @@ This is a comprehensive textbook project covering Physical AI and Humanoid Robot
 
 ## Setup
 
-1. Install Node.js and Python 3.9+
-2. Set up the frontend: `cd frontend && npm install && npm start`
-3. Set up the backend: `cd backend && pip install -r requirements.txt && python main.py`
+1. Install Node.js and npm
+2. Clone the repository
+3. Run `npm install` to install dependencies
+4. Run `npm start` to start the development server
 
 For detailed setup instructions, see the individual README files in each directory.
