@@ -1,0 +1,273 @@
+.textbookNavigation {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.navigationHeader {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navigationHeader h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.25rem;
+}
+
+.navigationStats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.moduleCount {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.modulesList {
+  margin-bottom: 2rem;
+}
+
+.moduleItem {
+  margin-bottom: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.moduleHeader:hover {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+.moduleHeader.currentModule {
+  background-color: var(--ifm-color-primary-lighter);
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.moduleInfo {
+  flex: 1;
+}
+
+.moduleTitle {
+  margin: 0 0 0.25rem 0;
+  color: var(--ifm-color-emphasis-900);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.moduleMeta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.moduleActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: var(--ifm-global-radius);
+  transition: transform 0.2s ease;
+}
+
+.expandButton:hover {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+.expandButton.expanded {
+  transform: rotate(180deg);
+}
+
+.expandIcon {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.weeksList {
+  background-color: var(--ifm-color-white);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.weekItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.weekItem:last-child {
+  border-bottom: none;
+}
+
+.weekItem:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.weekItem.currentWeek {
+  background-color: var(--ifm-color-success-lighter);
+  border-left: 4px solid var(--ifm-color-success);
+}
+
+.weekInfo {
+  flex: 1;
+}
+
+.weekNumber {
+  display: block;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem;
+}
+
+.weekTitle {
+  display: block;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.875rem;
+}
+
+.weekMeta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.lessonCount {
+  background-color: var(--ifm-color-info);
+  color: white;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.exerciseBadge {
+  background-color: var(--ifm-color-warning);
+  color: white;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.quizBadge {
+  background-color: var(--ifm-color-secondary);
+  color: white;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.progressSection {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.progressSection h4 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 1rem;
+}
+
+.progressOverview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progressItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.progressLabel {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.progressValue {
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.progressBar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: 0.25rem;
+  margin: 0.25rem 0;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.progressPercentage {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .textbookNavigation {
+    padding: 1rem;
+  }
+
+  .navigationHeader {
+    margin-bottom: 1rem;
+  }
+
+  .moduleMeta {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
+
+  .weekMeta {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+
+  .progressItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .progressPercentage {
+    align-self: flex-end;
+  }
+}

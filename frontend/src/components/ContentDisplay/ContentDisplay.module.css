@@ -1,0 +1,461 @@
+.contentDisplay {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--ifm-font-family-base);
+}
+
+.tabContainer {
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-600);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--ifm-color-primary);
+}
+
+.tab.activeTab {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.tabContent {
+  background-color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.textContent {
+  padding: 2rem;
+}
+
+.textContent h1 {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+}
+
+.textContent h2 {
+  color: var(--ifm-color-emphasis-800);
+}
+
+.textContent p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.codeContent {
+  padding: 1.5rem;
+}
+
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.codeControls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.languageSelect,
+.themeSelect {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-color-white);
+  font-size: 0.875rem;
+}
+
+.codeActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.copyButton,
+.runButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.copyButton {
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.copyButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.runButton {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.runButton:hover {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.codeBlock {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.codeBlock.light {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+}
+
+.codeBlock.dark {
+  background-color: var(--ifm-color-emphasis-900);
+  color: var(--ifm-color-emphasis-100);
+}
+
+.codeDescription {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.codeExplanations {
+  margin-top: 1rem;
+}
+
+.codeExplanations h4 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.codeExplanations ul {
+  padding-left: 1.5rem;
+}
+
+.codeExplanations li {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.simulationContent {
+  padding: 1.5rem;
+}
+
+.simulationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.simulationHeader h3 {
+  margin: 0;
+  color: var(--ifm-color-primary);
+}
+
+.simulationControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.simulationButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.simulationButton:nth-child(1) {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.simulationButton:nth-child(2) {
+  background-color: var(--ifm-color-warning);
+  color: white;
+}
+
+.simulationButton:nth-child(3) {
+  background-color: var(--ifm-color-danger);
+  color: white;
+}
+
+.simulationButton:hover {
+  opacity: 0.9;
+}
+
+.simulationViewer {
+  margin-bottom: 1.5rem;
+}
+
+.simulationPlaceholder {
+  background-color: var(--ifm-color-emphasis-100);
+  border: 2px dashed var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+.simulationVisual {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.simulationInfo {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.simulationInfo p {
+  margin: 0.25rem 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.simulationDescription h4 {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+}
+
+.simulationObjectives,
+.simulationInstructions {
+  margin-top: 1rem;
+}
+
+.simulationObjectives h5,
+.simulationInstructions h5 {
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0.5rem;
+}
+
+.simulationObjectives ul,
+.simulationInstructions ol {
+  padding-left: 1.5rem;
+}
+
+.simulationObjectives li,
+.simulationInstructions li {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.interactiveContent {
+  padding: 2rem;
+}
+
+.interactiveContent h3 {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+}
+
+.quizContainer {
+  margin-top: 1rem;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.question h4 {
+  margin-top: 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.answers {
+  margin-top: 1rem;
+}
+
+.answerOption {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: var(--ifm-global-radius);
+  transition: background-color 0.2s ease;
+}
+
+.answerOption:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.answerInput {
+  margin-right: 0.5rem;
+}
+
+.submitQuizButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.submitQuizButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.exerciseContainer {
+  margin-top: 1rem;
+}
+
+.exerciseContainer h4 {
+  color: var(--ifm-color-primary);
+}
+
+.exerciseInput {
+  margin: 1rem 0;
+}
+
+.solutionInput {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.solutionInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lighter);
+}
+
+.submitExerciseButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ifm-color-success);
+  color: white;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.submitExerciseButton:hover {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.resources {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.resources h4 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.resources ul {
+  padding-left: 1.5rem;
+}
+
+.resources li {
+  margin-bottom: 1rem;
+}
+
+.resources a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+.resources p {
+  margin: 0.25rem 0 0 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .contentDisplay {
+    padding: 1rem;
+  }
+
+  .codeHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .codeControls,
+  .codeActions {
+    justify-content: center;
+  }
+
+  .simulationHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .simulationControls {
+    justify-content: center;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

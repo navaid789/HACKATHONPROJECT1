@@ -1,0 +1,475 @@
+.simulationIntegration {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--ifm-font-family-base);
+}
+
+.simulationHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.simulationHeader h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+}
+
+.simulationMeta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.simulationType,
+.simulationStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.idle {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.running {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.paused {
+  background-color: var(--ifm-color-warning);
+  color: white;
+}
+
+.completed {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.stopped {
+  background-color: var(--ifm-color-emphasis-400);
+  color: white;
+}
+
+.error {
+  background-color: var(--ifm-color-danger);
+  color: white;
+}
+
+.simulationDescription {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.simulationDescription h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.simulationDescription p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.parametersSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.parametersSection h4 {
+  margin: 0 0 1.5rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.parametersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.parameterControl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.parameterLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.unit {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.slider {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.select,
+.numberInput {
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  font-size: 0.875rem;
+}
+
+.select:focus,
+.numberInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.parameterValue {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.simulationControls {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.controlButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.controlButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.controlButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.runButton {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.runButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.pauseButton {
+  background-color: var(--ifm-color-warning);
+  color: white;
+}
+
+.pauseButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-warning-dark);
+}
+
+.stopButton {
+  background-color: var(--ifm-color-danger);
+  color: white;
+}
+
+.stopButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-danger-dark);
+}
+
+.resetButton {
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.resetButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progressFill {
+  height: 1rem;
+  background-color: var(--ifm-color-primary);
+  border-radius: 0.5rem;
+  transition: width 0.3s ease;
+  min-width: 0;
+}
+
+.progressText {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-700);
+  min-width: 40px;
+  text-align: right;
+}
+
+.simulationViewer {
+  margin-bottom: 2rem;
+}
+
+.simulationPlaceholder {
+  background-color: var(--ifm-color-white);
+  border: 2px dashed var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: 3rem;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simulationVisual {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.simulationInfo {
+  text-align: left;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.simulationInfo p {
+  margin: 0.25rem 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.runningIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--ifm-color-emphasis-200);
+  border-top: 3px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.runningIndicator p {
+  margin-top: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.resultsSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.resultsSection h3 {
+  margin: 0 0 1.5rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metricCard {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  text-align: center;
+}
+
+.metricCard h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.875rem;
+}
+
+.metricCard p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
+
+.resultsSummary {
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.resultsSummary h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.resultsSummary p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.logsSection {
+  margin-bottom: 2rem;
+}
+
+.logsSection h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.logsContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem;
+}
+
+.logEntry {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  display: flex;
+  gap: 0.5rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+}
+
+.logEntry:last-child {
+  border-bottom: none;
+}
+
+.logTimestamp {
+  color: var(--ifm-color-emphasis-600);
+  font-weight: bold;
+}
+
+.logMessage {
+  color: var(--ifm-color-emphasis-800);
+}
+
+.logEntry.info .logMessage {
+  color: var(--ifm-color-emphasis-800);
+}
+
+.logEntry.success .logMessage {
+  color: var(--ifm-color-success-dark);
+}
+
+.logEntry.warning .logMessage {
+  color: var(--ifm-color-warning-dark);
+}
+
+.logEntry.error .logMessage {
+  color: var(--ifm-color-danger-dark);
+}
+
+.noLogs {
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.simulationInstructions {
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.simulationInstructions h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.simulationInstructions ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.simulationInstructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .simulationIntegration {
+    padding: 1rem;
+  }
+
+  .simulationMeta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .controlButtons {
+    flex-direction: column;
+  }
+
+  .controlButton {
+    width: 100%;
+  }
+
+  .parametersGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .logsContainer {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,372 @@
+.exerciseSubmission {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--ifm-font-family-base);
+}
+
+.exerciseHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.exerciseHeader h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+}
+
+.exerciseMeta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.moduleTag,
+.difficultyTag {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.exerciseDescription {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.exerciseDescription h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.exerciseDescription p {
+  margin: 0 0 1.5rem 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.requirements h4 {
+  margin: 1rem 0 0.5rem 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.requirements ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.requirements li {
+  margin-bottom: 0.5rem;
+}
+
+.submissionArea {
+  margin-bottom: 2rem;
+}
+
+.editorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.editorControls {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.languageSelector label {
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.languageSelect {
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-color-white);
+  font-size: 0.875rem;
+}
+
+.editorTabs {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.tabButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-color-white);
+  color: var(--ifm-color-emphasis-700);
+  border-radius: var(--ifm-global-radius) var(--ifm-global-radius) 0 0;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.tabButton.activeTab {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-color: var(--ifm-color-primary);
+}
+
+.editorActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.templateButton {
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-emphasis-800);
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.templateButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.editorContainer {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.codeEditor {
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  background-color: var(--ifm-color-emphasis-100);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 400px;
+}
+
+.codeEditor:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--ifm-color-primary);
+}
+
+.codePreview {
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  min-height: 400px;
+}
+
+.previewContent {
+  margin: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.submissionControls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+  flex-wrap: wrap;
+}
+
+.validateButton,
+.submitButton,
+.resetButton {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.validateButton {
+  background-color: var(--ifm-color-info);
+  color: white;
+}
+
+.validateButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-info-dark);
+}
+
+.submitButton {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.submitButton:disabled {
+  background-color: var(--ifm-color-emphasis-300);
+  cursor: not-allowed;
+}
+
+.resetButton {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.resetButton:hover {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+.submissionResult {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  border-left: 4px solid;
+}
+
+.submissionResult.success {
+  background-color: var(--ifm-color-success-lighter);
+  border-left-color: var(--ifm-color-success);
+}
+
+.submissionResult.error {
+  background-color: var(--ifm-color-danger-lighter);
+  border-left-color: var(--ifm-color-danger);
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.resultHeader h3 {
+  margin: 0;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.scoreBadge {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.submissionResult p {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.feedback h4,
+.validationIssues h4 {
+  margin: 1rem 0 0.5rem 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.validationIssues ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.validationIssues li {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-danger-dark);
+}
+
+.exampleSolution {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.exampleSolution h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.exampleCode {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.exampleCode code {
+  color: var(--ifm-color-emphasis-800);
+}
+
+@media (max-width: 768px) {
+  .exerciseSubmission {
+    padding: 1rem;
+  }
+
+  .exerciseMeta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .editorHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .editorControls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .submissionControls {
+    flex-direction: column;
+  }
+
+  .validateButton,
+  .submitButton,
+  .resetButton {
+    width: 100%;
+  }
+
+  .resultHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

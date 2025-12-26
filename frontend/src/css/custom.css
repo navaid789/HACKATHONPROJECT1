@@ -1,0 +1,86 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for Physical AI & Humanoid Robotics Textbook */
+.textbook-header {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.textbook-header h1 {
+  margin-bottom: 1rem;
+}
+
+.textbook-module {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.textbook-week {
+  border-left: 4px solid #25c2a0;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exercise-box {
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #fff8e1;
+}
+
+.simulation-note {
+  border: 2px solid #1e88e5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #e3f2fd;
+}
+
+.code-explanation {
+  background-color: #f5f5f5;
+  border-left: 4px solid #2196f3;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.robotics-diagram {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

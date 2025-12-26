@@ -1,0 +1,311 @@
+.contentPersonalization {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--ifm-font-family-base);
+}
+
+.personalizationHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.personalizationHeader h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.personalizationHeader p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.preferencesPanel {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 2rem;
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 2rem;
+}
+
+.preferenceGroup {
+  margin-bottom: 1.5rem;
+}
+
+.preferenceGroup:last-child {
+  margin-bottom: 0;
+}
+
+.preferenceLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 1rem;
+}
+
+.preferenceOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.preferenceOption {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-color-white);
+  color: var(--ifm-color-emphasis-700);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.preferenceOption:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.preferenceOption.active {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-color: var(--ifm-color-primary);
+}
+
+.contentRecommendations {
+  margin-bottom: 2rem;
+}
+
+.recommendationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.recommendationsHeader h4 {
+  margin: 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.25rem;
+}
+
+.recommendationCount {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.recommendationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.recommendationItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommendationItem:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.recommendationContent {
+  flex: 1;
+  margin-right: 1.5rem;
+}
+
+.recommendationTitle {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.1rem;
+}
+
+.recommendationDescription {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.5;
+}
+
+.recommendationTags {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--ifm-color-info);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.recommendationReason {
+  margin: 0;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+}
+
+.recommendationActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: flex-start;
+}
+
+.startButton,
+.saveButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.startButton {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.startButton:hover {
+  background-color: var(--ifm-color-success-dark);
+}
+
+.saveButton {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.saveButton:hover {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+.noRecommendations {
+  text-align: center;
+  padding: 3rem;
+  color: var(--ifm-color-emphasis-600);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.learningPath {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 2rem;
+  border-radius: var(--ifm-global-radius);
+}
+
+.learningPath h4 {
+  margin: 0 0 1.5rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.25rem;
+}
+
+.pathProgress {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pathItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pathCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.pathContent {
+  flex: 1;
+}
+
+.pathContent h5 {
+  margin: 0 0 0.25rem 0;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 1rem;
+}
+
+.pathContent p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .contentPersonalization {
+    padding: 1rem;
+  }
+
+  .recommendationsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .recommendationCount {
+    align-self: flex-start;
+  }
+
+  .recommendationItem {
+    flex-direction: column;
+  }
+
+  .recommendationContent {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .recommendationActions {
+    align-self: stretch;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .pathItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pathCircle {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .preferencesPanel {
+    padding: 1.5rem;
+  }
+
+  .preferenceOptions {
+    justify-content: center;
+  }
+}
